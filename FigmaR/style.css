@@ -1,0 +1,203 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('img/pexel.jpg'); /* Cambia la ruta a tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+  
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  background-color: #1E1E1E; /* Fondo negro */
+  border-bottom: 1px solid #222;
+}
+
+.main-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.main-menu .text-wrapper {
+  text-decoration: none;
+  color: #ffffff; /* Texto blanco */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-menu .text-wrapper:hover {
+  color: #00aced; /* Azul claro o cualquier otro que contraste */
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.redes img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+  transform: scale(1.2);
+}
+
+/* MAIN CONTENT */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* INTRO */
+.intro .hola-mi-nombre-es {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.intro .santiago-herrera {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.intro .text-wrapper-2 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.CTA {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.CTA:hover {
+  background-color: #0056b3;
+}
+
+/* CARDS / PROJECTS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.cards div {
+  width: 280px;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #1E1E1E; /* Fondo gris oscuro */
+  background-color: #181818;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px #ffffff(0, 0, 0, 0.1);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* IMAGE SECTION */
+.image-section {
+  margin-top: 30px;
+}
+
+.santiago {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* MEDIA QUERIES */
+
+/* Móviles */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-menu,
+  .redes {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .intro .santiago-herrera {
+    font-size: 32px;
+  }
+
+  .intro .text-wrapper-2 {
+    font-size: 18px;
+  }
+
+  .CTA {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .cards div {
+    width: 90%;
+  }
+
+  .santiago {
+    width: 150px;
+  }
+}
+
+/* Tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro .santiago-herrera {
+    font-size: 40px;
+  }
+
+  .intro .text-wrapper-2 {
+    font-size: 20px;
+  }
+
+  .cards div {
+    width: 45%;
+  }
+
+  .santiago {
+    width: 180px;
+  }
+}
+
+/* Escritorio grande */
+@media (min-width: 1440px) {
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
