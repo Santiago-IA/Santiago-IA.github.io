@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Herrera - Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#007bff" />
+    <script defer src="main.js"></script>
+    <script defer src="swRegister.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dexie@4/dist/dexie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="logo">Santiago H.</h1>
+      <nav class="main-menu">
+        <a href="#inicio" class="text-wrapper">Inicio</a>
+        <a href="#sobre-mi" class="text-wrapper">Sobre mí</a>
+        <a href="#proyectos" class="text-wrapper">Proyectos</a>
+        <a href="#biblioteca" class="text-wrapper">Librería</a>
+        <a href="#contacto" class="text-wrapper">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="intro" id="inicio">
+        <p class="hola-mi-nombre-es">Hola, soy</p>
+        <h1 class="santiago-herrera">Santiago Herrera</h1>
+        <p class="descripcion">Desarrollador Front-End</p>
+        <a class="CTA" href="#contacto">Contáctame</a>
+      </section>
+
+      <section class="cards" id="proyectos">
+        <div class="card">Python</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Postman</div>
+        <div class="card">AWS</div>
+        <div class="card">Google Services</div>
+        <div class="card">GitHub</div>
+      </section>
+
+      <section id="biblioteca" class="library-section">
+        <h2>Hazme comentarios</h2>
+        <form id="form-libro">
+          <input type="text" id="titulo" placeholder="Comentario" required />
+          <input type="text" id="autor" placeholder="Autor" required />
+          <button type="submit">Agregar</button>
+        </form>
+        <div id="lista-libros" class="lista-libros"></div>
+      </section>
+
+      <aside class="image-section">
+        <img class="santiago" src="img/foto.jpg" alt="Foto de Santiago" />
+      </aside>
+    </main>
+  </body>
+</html>
